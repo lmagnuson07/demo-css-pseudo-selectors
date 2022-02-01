@@ -1,1 +1,55 @@
-/* developer styles go here */
+main {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+section {
+    padding: 3rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* :nth child selector - selects elements based on their position as a child in any parent element */
+section:first-child {
+    background-color: crimson;
+}
+
+section:nth-child(2) {
+    background-color: tomato;
+}
+
+section:nth-child(3) {
+    background-color: khaki;
+}
+
+section:nth-child(4) {
+    background-color: lightgreen;
+}
+
+section:nth-child(5) {
+    background-color: lightseagreen;
+}
+
+section:last-child {
+    background-color: steelblue;
+}
+
+section:only-child {
+    background-color: whitesmoke;
+}
+
+/* nth of type selectors - selects elements based on their position as a child as that TYPE of selector */
+
+p:first-of-type {
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+p:last-of-type {
+    font-size: 1rem;
+}
+
+p:nth-of-type(2) {
+    display: none;
+}
